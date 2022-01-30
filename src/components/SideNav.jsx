@@ -1,6 +1,30 @@
 import React, { forwardRef } from "react";
+import { Link } from "react-router-dom";
 
 import "./SideNav.less";
+
+const linkArr = [
+  {
+    title: "文章",
+    link: "",
+  },
+  {
+    title: "摄影作品",
+    link: "",
+  },
+  {
+    title: "视频",
+    link: "",
+  },
+  {
+    title: "音频",
+    link: "",
+  },
+  {
+    title: "古诗词",
+    link: "",
+  },
+];
 
 const SideNav = forwardRef((props, ref) => {
   const { onCloseClick } = props;
@@ -27,9 +51,11 @@ const SideNav = forwardRef((props, ref) => {
         </svg>
       </div>
       <div className="item-list">
-        <span>链接</span>
-        <span>链接</span>
-        <span>链接</span>
+        {linkArr.map((item) => (
+          <Link to={item.link} key={item.title}>
+            <span>{item.title}</span>
+          </Link>
+        ))}
       </div>
     </div>
   );

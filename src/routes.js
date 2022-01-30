@@ -6,7 +6,7 @@ const Index = lazy(() => import("./pages/Index/Index"));
 const routes = [
   {
     key: "index",
-    path: "/index",
+    path: "/",
     element: <Index />,
   },
 ];
