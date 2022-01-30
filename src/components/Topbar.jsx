@@ -4,14 +4,14 @@ import { MenuOutlined } from "@ant-design/icons";
 import "./Topbar.less";
 
 const Topbar = forwardRef((props, ref) => {
-  const { title, style } = props;
+  const { title, style, onMenuClick } = props;
 
   return (
     <div className="top-bar" style={style}>
       <div className="title" ref={ref}>
         {title}
       </div>
-      <div className="menu-button">
+      <div className="menu-button" onClick={onMenuClick}>
         <MenuOutlined />
       </div>
     </div>

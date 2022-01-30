@@ -2,3 +2,13 @@
   font-family: "PangMenZhengDao-XiXian";
   src: url("../assets/fonts/庞门正道细线体.ttf");
 }
+
+@font-face {
+  font-family: "SourceHanSans-Light";
+  src: url("../assets/fonts/SourceHanSans-Light.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSans-Normal";
+  src: url("../assets//fonts/SourceHanSans-Normal.otf");
+}
