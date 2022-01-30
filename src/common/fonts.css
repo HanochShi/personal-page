@@ -1,14 +1,17 @@
 @font-face {
   font-family: "PangMenZhengDao-XiXian";
-  src: url("../assets/fonts/庞门正道细线体.ttf");
+  src: local("PangMenZhengDao-XiXian"),
+    url("../assets/fonts/庞门正道细线体.ttf");
 }
 
 @font-face {
   font-family: "SourceHanSans-Light";
-  src: url("../assets/fonts/SourceHanSans-Light.otf");
+  src: local("SourceHanSans-Light"),
+    url("../assets/fonts/SourceHanSans-Light.otf");
 }
 
 @font-face {
   font-family: "SourceHanSans-Normal";
-  src: url("../assets//fonts/SourceHanSans-Normal.otf");
+  src: local("SourceHanSans-Normal"),
+    url("../assets//fonts/SourceHanSans-Normal.otf");
 }
